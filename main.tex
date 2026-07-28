@@ -389,24 +389,19 @@ by the strong coupling channel of Quantum Chromodynamics (QCD).
 By substituting the fine-structure constant ($\alpha \to \alpha_s$) 
 and mapping the vacuum substrate response to the effective 
 chromodynamic boundary surface tension ($\sigma_{\rm eff} \to 
-$\sigma_{\rm QCD}$$), the total variational energy functional 
+\sigma_{\rm QCD}$), the total variational energy functional 
 characterizing the proton attractor takes the form:
 \begin{equation}
 \label{eq:E_proton}
 E_{\rm proton}(r) = \frac{\alpha_s \hbar c}{r} + 
-4\pi $\sigma_{\rm QCD}$ r^2.
+4\pi \sigma_{\rm QCD} r^2.
 \end{equation}
 
-We employ the effective infrared fixed-point value $\alpha_s \to 1.0$
-
-in the non-perturbative regime, consistent with standard hadronic
-
-string-tension approximations and infrared freezing constraints.
-
-In this context, $\sigma_{\rm QCD}$ represents the universal
-
-vacuum response substrate scaled by the multi-body packing factor
-
+We employ the effective infrared fixed-point value $\alpha_s \to 1.0$ 
+in the non-perturbative regime, consistent with standard hadronic 
+string-tension approximations and infrared freezing constraints. 
+In this context, $\sigma_{\rm QCD}$ represents the universal 
+vacuum response substrate scaled by the multi-body packing factor 
 under structural color confinement dynamics.
 
 The physical equilibrium configuration of the localized soliton 
@@ -416,7 +411,7 @@ condition defines the stable charge radius of the proton $r_p$:
 \begin{equation}
 \label{eq:rp_analytical}
 \left. \frac{dE_{\rm proton}}{dr} \right|_{r=r_p} = 0 
-\implies r_p = \left( \frac{\alpha_s \hbar c}{8\pi $\sigma_{\rm QCD}$} 
+\implies r_p = \left( \frac{\alpha_s \hbar c}{8\pi \sigma_{\rm QCD}} 
 \right)^{1/3}.
 \end{equation}
 
@@ -425,7 +420,7 @@ boundary parameters yields the constituent chromodynamic
 surface tension expression:
 \begin{equation}
 \label{eq:sigma_qcd}
-$\sigma_{\rm QCD}$ = \frac{\alpha_s}{8\pi} \frac{m_p^3 c^5}{\hbar^2}.
+\sigma_{\rm QCD} = \frac{\alpha_s}{8\pi} \frac{m_p^3 c^5}{\hbar^2}.
 \end{equation}
 
 Crucially, the structural distinction between elementary leptons 
@@ -448,7 +443,7 @@ the definitive CODATA muonic hydrogen spectroscopic measurements
 
 \paragraph{Confinement potential and the proton spin puzzle.}
 Differentiating the boundary tension energy $E_{\rm surf} = 
-4\pi $\sigma_{\rm QCD}$ r^2$ with respect to the spatial coordinate 
+4\pi \sigma_{\rm QCD} r^2$ with respect to the spatial coordinate 
 yields a constant radial restoring force $F = -dE/dr \propto 
 \text{constant}$. This reproduces the linear quark confinement potential 
 $V(r) \sim \kappa r$ directly from the boundary geometry of the 
@@ -457,7 +452,6 @@ mapping the spin-$1/2$ algebra onto the circulating boundary current
 $J_{\rm vac}$ provides a geometric origin for the missing $70\%$ 
 baryonic angular momentum, assigning it to the collective 
 vorticity of the vacuum shell rather than intrinsic gluonic sea states.
-
 
 \begin{table*}[!htbp]
 \caption{Comparison between standard QCD and the vacuum EFT framework.}
@@ -469,7 +463,7 @@ Property & Standard Lattice QCD & Vacuum Response EFT \\
 \hline
 Mass Origin & Chiral breaking loops & Variational attractor ($938.27\,\mathrm{MeV}$) \\
 Charge Radius & Empirical form factor & Geometric Compton minimum ($0.8412\,\mathrm{fm}$) \\
-Confinement & Gluonic flux tubes & Holographic surface tension ($$\sigma_{\rm QCD}$ r^2$) \\
+Confinement & Gluonic flux tubes & Holographic surface tension ($\sigma_{\rm QCD} r^2$) \\
 Spin Component & Complex parton sum & Circulating boundary current $J_{\rm vac}$ \\
 \hline\hline
 \end{tabular}
@@ -628,6 +622,9 @@ contrasted against standard quintessence alternatives.}
 \label{fig:prediction_plot}
 \end{figure}
 
+
+
+
 % =============================================================
 % SECTION 8: CONCLUSION
 % =============================================================
@@ -658,7 +655,26 @@ remnant matter from total mutual annihilation without adding
 unverified CP-violating fields, establishing a testable 
 characterization for future high-energy experiments.
 
+\section*{Data Availability}
+The supporting computational framework and 
+reproducibility pipeline for this study are 
+openly archived at: 
+\url{https://github.com\_eft\_microscopic\_mass} 
+with static dataset verification under 
+Zenodo DOI: \texttt{10.5281/zenodo.21540551}.
 
+
+\begin{acknowledgments}
+The author expresses sincere gratitude to the open-source 
+scientific computing community for providing the numerical 
+infrastructure utilized throughout this research, specifically 
+the Python Core development team, NumPy, and Matplotlib 
+libraries. Special recognition is extended to the Linux 
+subsystem maintenance teams for supporting the robust 
+computational environment required for the validation pipelines, 
+as well as the developers of the REVTeX editorial framework 
+for enabling rigorous publication-grade manuscript integration.
+\end{acknowledgments}
 
 
 % =====================================================================
@@ -721,13 +737,6 @@ J.~Schwinger,
 
 \end{thebibliography}
 
-\section*{Data Availability}
-The supporting computational framework and 
-reproducibility pipeline for this study are 
-openly archived at:
-https://github.com
-with static dataset verification under 
-Zenodo DOI: 10.5281/zenodo.21540551.
 
 
 \end{document}
