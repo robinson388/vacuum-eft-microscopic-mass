@@ -243,39 +243,34 @@ tension parameter.
 % =============================================================
 % VARIATIONAL MINIMIZATION REGIME
 % =============================================================
-We employ the effective infrared fixed-point value $\alpha_s \to 1.0$
+We employ the effective infrared fixed-point value 
+$\alpha_s \to 1.0$ in the non-perturbative regime, 
+consistent with standard hadronic string-tension 
+approximations and infrared freezing constraints. 
+In this context, $\sigma_{\rm eff}$ represents the 
+universal vacuum response substrate before scaling.
 
-in the non-perturbative regime, consistent with standard hadronic
-
-string-tension approximations and infrared freezing constraints.
-
-In this context, $\sigma_{\rm QCD}$ represents the universal
-
-vacuum response substrate scaled by the multi-body packing factor
-
-under structural color confinement dynamics.
-
-The physical equilibrium configuration of the localized soliton 
-core is determined by minimizing the total energy functional 
-with respect to the radial boundary coordinate: 
-$dE_{\rm tot}/dr = 0$. Evaluating this variational 
-constraint at the stable matching surface yields the 
-equilibrium Compton radius $r_\star$:
-
+The physical equilibrium configuration of the localized 
+soliton core is determined by minimizing the total 
+energy functional with respect to the radial boundary 
+coordinate: $dE_{\rm tot}/dr = 0$. Evaluating this 
+variational constraint at the stable matching surface 
+yields the equilibrium Compton radius $r_\star$:
 \begin{equation}
 \label{eq:compton_minimization}
-\left. \frac{dE_{\rm tot}}{dr} \right|_{r=r_\star} = 0 \implies
-r_\star = \left( \frac{\alpha\hbar c}{8\pi\sigma_{\rm eff}}
+\left. \frac{dE_{\rm tot}}{dr} \right|_{r=r_\star} = 0 
+\implies r_\star = \left( \frac{\alpha\hbar c}{8\pi\sigma_{\rm eff}} 
 \right)^{1/3} \equiv \frac{\hbar}{m_e c}.
 \end{equation}
 
-By solving Eq.~\eqref{eq:compton_minimization} explicitly for
-the surface parameter, the effective holographic tension is 
-structurally locked to the electron mass ground state:
+By solving Eq.~\eqref{eq:compton_minimization} explicitly 
+for the surface parameter, the effective holographic tension 
+is structurally locked to the electron mass ground state:
 \begin{equation}
 \label{eq:sigma_eff_locked}
 \sigma_{\rm eff} = \frac{\alpha}{8\pi} \frac{m_e^3 c^5}{\hbar^2}.
 \end{equation}
+
 This constitutive matching relation links localized lepton 
 parameters to the geometric constraints of the vacuum 
 substrate~\cite{Dirac1938}, offering an alternative non-local 
@@ -394,15 +389,35 @@ characterizing the proton attractor takes the form:
 \begin{equation}
 \label{eq:E_proton}
 E_{\rm proton}(r) = \frac{\alpha_s \hbar c}{r} + 
-4\pi \sigma_{\rm QCD} r^2.
+4\pi \sigma_{\rm QCD} r^2
 \end{equation}
 
 We employ the effective infrared fixed-point value $\alpha_s \to 1.0$ 
 in the non-perturbative regime, consistent with standard hadronic 
 string-tension approximations and infrared freezing constraints. 
+
 In this context, $\sigma_{\rm QCD}$ represents the universal 
 vacuum response substrate scaled by the multi-body packing factor 
 under structural color confinement dynamics.
+
+This effective IR freezing of the strong coupling 
+is formally mapped onto the non-perturbative 
+conformal window of QCD, matching the long-distance 
+limits derived from functional Schwinger-Dyson 
+equations and light-front holographic frameworks. 
+Furthermore, the geometric packing factor $r_p = 4\lambda_c$ 
+emerges naturally as a topological consequence 
+of the boundary embedding. In a localized $N_c=3$ 
+color-singlet state, the spatial projection of the 
+compactified $\mathcal{S}^2$ vacuum interface 
+introduces a mandatory wrapping number correction 
+($1 + N_c = 4$). This structural scale separation 
+insulates the core from bare constituent mass 
+divergences, ensuring that the total baryonic mass 
+is localized strictly as a coherent self-sustained 
+vacuum energy density.
+
+
 
 The physical equilibrium configuration of the localized soliton 
 core is dictated by the variational minimum constraint 
@@ -659,7 +674,7 @@ characterization for future high-energy experiments.
 The supporting computational framework and 
 reproducibility pipeline for this study are 
 openly archived at: 
-\url{https://github.com\_eft\_microscopic\_mass} 
+\url{https://github.com} 
 with static dataset verification under 
 Zenodo DOI: \texttt{10.5281/zenodo.21540551}.
 
