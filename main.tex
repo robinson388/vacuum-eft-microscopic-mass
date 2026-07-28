@@ -1,38 +1,35 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsfonts,bm}
+\documentclass[
+  reprint,
+  aps,
+  prd,
+  twocolumn,
+  superscriptaddress,
+  nofootinbib,
+  floatfix
+]{revtex4-2}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{float}
-\usepackage{cite}
 \usepackage{hyperref}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    citecolor=blue,
-    urlcolor=blue
-}
-
-\title{\textbf{Local Mass Generation via Holographic Vacuum Response:}\\
-\large Spin-$\frac{1}{2}$ Topology and the Lepton Mass Hierarchy as Boundary Attractors}
-
-\author{\textbf{Robinson Bueno Parra}\\[0.5em]
-\small\textit{Department of Theoretical Physics / Independent Research}\\[0.2em]
-\small\texttt{robinbuenoparra8@gmail.com}\\[0.2em]
-\small ORCID: \texttt{0009-0009-7434-8468}\\[0.5em]
-\small GitHub Repository: \texttt{https://github.com robinson388/vacio-eft-masa-leptona}\\[0.2em]
-\small Zenodo Digital Repository DOI: \texttt{10.5281/zenodo.21631097}}
-
-
-
-\date{\today}
+\usepackage{xcolor}
 
 \begin{document}
 
-\maketitle
+\title{IR Matching of the Electron Mass and Baryonic 
+Scales in a Covariant Classical Vacuum-Response EFT}
+
+\author{Robinson Bueno Parra}
+\email{robinbuenoparra8@gmail.com}
+\homepage{https://orcid.org}
+\affiliation{Independent Researcher, Spain}
+
+\date{\today}
 
 \begin{abstract}
+
+
+
 We extend the Effective Field Theory (EFT) of emergent 
 classical vacuum response to the microscopic domain to 
 explore a non-perturbative mechanism for fermion mass 
@@ -58,9 +55,11 @@ a stable selection branch ($\Delta P_{\rm vac} < 0$), protecting
 remnant baryonic matter from complete annihilation.
 \end{abstract}
 
+
 % =====================================================================
 % SECTION 1: INTRODUCTION
 % =====================================================================
+\maketitle
 \section{Introduction}
 \label{sec:introduction}
 
@@ -244,6 +243,18 @@ tension parameter.
 % =============================================================
 % VARIATIONAL MINIMIZATION REGIME
 % =============================================================
+We employ the effective infrared fixed-point value \alpha_s \to 1.0
+
+in the non-perturbative regime, consistent with standard hadronic
+
+string-tension approximations and infrared freezing constraints.
+
+In this context, \sigma_{\rm QCD} represents the universal
+
+vacuum response substrate scaled by the multi-body packing factor
+
+under structural color confinement dynamics.
+
 The physical equilibrium configuration of the localized soliton 
 core is determined by minimizing the total energy functional 
 with respect to the radial boundary coordinate: 
@@ -353,9 +364,9 @@ tension bounds. This non-perturbative eigenvalue spectrum
 offers an alternative framework that bypasses arbitrary, 
 decoupled Higgs Yukawa couplings within the fermion sector.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.7\textwidth]{lepton_hierarchy.png}
+\includegraphics[width=\columnwidth]{lepton_hierarchy.png}
 \caption{The mass hierarchy of charged leptons ($e, \mu, \tau$)
 formulated as quantized radial overtones within the effective
 vacuum response potential $V_{\rm eff}(r)$.}
@@ -385,6 +396,18 @@ characterizing the proton attractor takes the form:
 E_{\rm proton}(r) = \frac{\alpha_s \hbar c}{r} + 
 4\pi \sigma_{\rm QCD} r^2.
 \end{equation}
+
+We employ the effective infrared fixed-point value \alpha_s \to 1.0
+
+in the non-perturbative regime, consistent with standard hadronic
+
+string-tension approximations and infrared freezing constraints.
+
+In this context, \sigma_{\rm QCD} represents the universal
+
+vacuum response substrate scaled by the multi-body packing factor
+
+under structural color confinement dynamics.
 
 The physical equilibrium configuration of the localized soliton 
 core is dictated by the variational minimum constraint 
@@ -435,7 +458,8 @@ $J_{\rm vac}$ provides a geometric origin for the missing $70\%$
 baryonic angular momentum, assigning it to the collective 
 vorticity of the vacuum shell rather than intrinsic gluonic sea states.
 
-\begin{table}[h]
+
+\begin{table*}[!htbp]
 \caption{Comparison between standard QCD and the vacuum EFT framework.}
 \label{tab:proton_eft}
 \centering
@@ -449,7 +473,9 @@ Confinement & Gluonic flux tubes & Holographic surface tension ($\sigma_{\rm QCD
 Spin Component & Complex parton sum & Circulating boundary current $J_{\rm vac}$ \\
 \hline\hline
 \end{tabular}
-\end{table}
+\end{table*}
+
+
 
 % =============================================================
 % SECTION 6: MATTER-ANTIMATTER AND BARYON ASYMMETRY
@@ -592,9 +618,9 @@ the Dark Energy Spectroscopic Instrument (DESI) and the Vera C.
 Rubin Observatory, bridging the microscopic lepton spectrum 
 directly with large-scale infrared tracking channels.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.7\textwidth]{vacuum_prediction.png}
+\includegraphics[width=\columnwidth]{vacuum_prediction.png}
 \caption{The transient activation profile of the dark energy
 equation of state $w(z)$ driven by the non-equilibrium
 hysteresis freezing mechanism near $z_{\rm crit} = 2.5$,
@@ -695,6 +721,13 @@ J.~Schwinger,
 
 \end{thebibliography}
 
+\section*{Data Availability}
+The supporting computational framework and 
+reproducibility pipeline for this study are 
+openly archived at:
+https://github.com
+with static dataset verification under 
+Zenodo DOI: 10.5281/zenodo.21540551.
 
 
 \end{document}
